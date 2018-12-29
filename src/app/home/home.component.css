@@ -1,0 +1,153 @@
+.container-fluid{
+   background:url("../../assets/bgmake5.jpg") no-repeat;
+  background-size: cover;
+  /* width:106%; */
+}
+
+.img1{
+    height: 650px;
+}
+.img2{
+    height: 650px;
+}
+.img3{
+    height: 650px;
+}
+.img4{
+    height: 650px;
+}
+.img5{
+    height: 650px;
+}
+.right{
+  float: right;
+}
+
+
+.zindex{
+  position: relative;
+  z-index: 100;
+}
+
+.container{
+ width: 1280px;
+  margin: 180px auto 0; 
+  display:flex; 
+  
+} 
+
+ .container .box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container .box .imgBox{
+position: relative;
+overflow: hidden;
+
+}
+
+.container .box .imgBox img{
+  width : 100%;
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.container .box:hover .imgBox img{
+  transform: scale(1);
+}
+
+
+
+
+
+@keyframes slider {
+
+  0% {
+      left: 0;
+  }
+  
+  20% {
+      left: 0;
+  }
+  
+  25% {
+      left: -100%;
+  }
+  
+  45% {
+      left: -100%;
+  
+  }
+  
+  50% {
+      left: -200%;
+  
+  }
+  
+  70% {
+      left: -200%;
+  }
+  
+  75% {
+      left: -300%;
+  }
+  
+  95% {
+      left: -300%;
+  }
+  
+  100% {
+      left: -400%;
+  
+  }
+  
+  }
+  
+  #slider {
+      overflow: hidden;
+    /* width:1000px; */
+    background-size: cover;
+    
+    }
+  
+  #slider figure img {
+      width:20%;
+      float: center;
+      background-size: cover;
+      /* padding-left: 362px; */
+      
+  }
+  
+  #slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0%;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 20s slider infinite; 
+      height: 100%;
+      text-align: center;
+      overflow: hidden;
+    
+  } 
+
+  .image img{
+    width: 100%;
+    height: 90%;
+   
+  }
+  .fa-3x {
+    font-size: 5em;
+    line-height: 39px; 
+     color:black; 
+     padding: 10px;
+}  

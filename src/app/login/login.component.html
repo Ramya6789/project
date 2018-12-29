@@ -1,0 +1,61 @@
+<html>
+<body><br>
+  <br><br><br><br>
+  <div class="card">
+    <div class="container">
+      <div class="grid-container">
+        <div class="grid-item1">
+          <img src="../../assets/logo.png" class="imgclass">
+          <p class="q">What we do ??</p>
+          <h4>We make you <b>"BEAUTIFUL"</b></h4>
+          <h4>We make you <b>"CONFIDENT"</b></h4>
+          <h4>We make you <b>"UNIQUE"</b> </h4>
+        </div>
+        <div class="grid-item2">
+          <form #loginForm="ngForm">
+            <br><br><br>
+            <!-- <div class="textstyle"> -->
+              <div class="form-group">
+                <label>Email ID<span class="text-danger">*</span>:</label>
+<input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="loginInterface.emailID" id="email" name="emailref"  #emailref="ngModel" required>
+              <span class="mandatory">
+                <div *ngIf="emailref.errors?.required && emailref.touched">Email is required</div>
+                </span>
+              <div [hidden]="!emailref.errors?.pattern">
+              Invalid email id
+           </div> 
+          
+        
+              </div>
+              <div class="form-group">
+                <label>Password<span class="text-danger">*</span>:</label>
+                <input type="password" name="Password" class="form-control" #Password="ngModel" [(ngModel)]="loginInterface.password"
+                  required>
+                <span class="mandatory">
+                  <div *ngIf="Password.errors?.required && Password.touched">Password is required</div>
+                </span>
+              </div>
+            <!-- </div> -->
+            <div class="form-group">
+              <button type="button" class="btn btn-primary form-control" [disabled]="loginForm.invalid" (click)="onLogin()">LOGIN</button>
+            </div>
+
+            <div class="form-group">
+             
+            
+              <div class="warning">{{errorMessage}}</div>
+            </div>
+            <br><br>
+            <button type="button" class="btn btn-primary form-control" (click)="onSignup(loginForm)">REGISTER HERE</button>
+ 
+          </form>
+
+        </div>
+      </div>
+      <br>
+    </div>
+    <br><br><br>
+  </div>
+</body>
+
+</html>

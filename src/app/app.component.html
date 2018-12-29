@@ -1,0 +1,42 @@
+
+<nav *ngIf="showNav">
+   <div class="dropdown mr-5">
+  <button class="dropbtn">Lips</button>
+    <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    </div>
+    <div class="dropdown mr-5">
+    <button class="dropbtn">Hair</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        </div>
+     <div class="dropdown mr-5">
+        <button class="dropbtn">Eyes</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        </div>
+    <div class="dropdown mr-5">
+        <button class="dropbtn">Skin</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            </div>
+            <div class="right"> 
+                    <a href="#"><i class="fa fa-sign-out fa-3x" aria-hidden="true" (click)=logOut()></i></a>
+                  <a href="#"><span class="fa fa-shopping-cart fa-3x" aria-hidden="true"></span></a>
+                  
+                </div>
+</nav>
+
+<router-outlet></router-outlet>
